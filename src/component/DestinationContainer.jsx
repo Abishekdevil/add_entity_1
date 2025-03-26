@@ -40,9 +40,11 @@ const destinations = [
 
 const DestinationContainer = () => {
     return (
-        destinations.map((data, index) => (
+        <div className='mainBox'>
+        {destinations.map((data, index) => (
             <DestinationCard key={index} name={data.name} location={data.location} image={data.image} description={data.description} price={data.price} />
-        ))
+        ))}
+        </div>
     );
 }
 
